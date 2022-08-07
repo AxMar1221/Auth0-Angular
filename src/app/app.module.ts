@@ -1,16 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AuthModule } from '@auth0/auth0-angular';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { PricesComponent } from './components/prices/prices.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProtectedComponent } from './components/protected/protected.component';
+import { AuthButtonComponent } from './components/auth-button/auth-button.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    PricesComponent,
+    HomeComponent,
+    ProtectedComponent,
+    AuthButtonComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    AuthModule.forRoot({
+      domain: 'dev-tachi-7inc.us.auth0.com',
+      clientId: 'vfOKku3L3x91U33yboYWT7VUsqhHyFJS'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
