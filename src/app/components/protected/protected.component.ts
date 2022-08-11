@@ -9,7 +9,11 @@ export class ProtectedComponent implements OnInit {
 
   constructor( public auth: AuthService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    console.log('ngOnInit protected');
+    this.auth.user$.subscribe( perfil => {
+      console.log(perfil);
+    })
   }
 
 }
