@@ -19,26 +19,16 @@
           </li>
         </ul>
         <span class="navbar-text">
-          <!-- <button *ngIf="!auth.loggedIn"
-                  (click)="auth.login()"
-                  class="btn btn-outline-primary">
-                  Login
-          </button>
-          <button *ngIf="auth.loggedIn"
-                  (click)="auth.logout()"
-                  class="btn btn-outline-danger">
-                  Logout
-          </button> -->
           <button *ngIf="!auth.loggedIn"
                   (click)="auth.login()"
                   class="btn btn-outline-primary">
-            Ingresar
+            Login
           </button>
 
           <button *ngIf="auth.loggedIn"
                   (click)="auth.logout()"
                   class="btn btn-outline-danger">
-            Salir
+            Logout
           </button>
         </span>
       </div>

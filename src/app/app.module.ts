@@ -9,7 +9,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PricesComponent } from './components/prices/prices.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProtectedComponent } from './components/protected/protected.component';
-import { AuthButtonComponent } from './components/auth-button/auth-button.component';
 import { CallbackComponent } from './components/callback/callback.component';
 import { AuthService } from './services/auth.service';
 
@@ -20,7 +19,6 @@ import { AuthService } from './services/auth.service';
     PricesComponent,
     HomeComponent,
     ProtectedComponent,
-    AuthButtonComponent,
     CallbackComponent,
   ],
   imports: [
